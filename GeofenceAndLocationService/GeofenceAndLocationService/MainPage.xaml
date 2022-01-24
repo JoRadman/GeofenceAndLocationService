@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GeofenceAndLocationService.MainPage">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Button x:Name="btn_StartGettingLocation" Text="GET LOCATION" BackgroundColor="Aqua" Clicked="btn_StartGettingLocation_Clicked" Margin="0,20,0,50"/>
+
+                <Label Text="Latitude" FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_Latitude" Margin="0,0,0,20"/>
+
+                <Label Text="Longitude"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_Longitude" Margin="0,0,0,20"/>
+
+                <Label Text="Radius"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_Radius" Margin="0,0,0,20"/>
+
+                <Button x:Name="btn_SaveGeofenceData" Text="SAVE" BackgroundColor="Aqua" Clicked="btn_SaveGeofenceData_Clicked" Margin="0,0,0,20"/>
+
+                <Button x:Name="btn_StartCheckingGeofence" Text="CHECK GEOFENCE" BackgroundColor="Aqua" Clicked="btn_StartCheckingGeofence_Clicked" Margin="20,0,0,20"/>
+            </StackLayout>
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
